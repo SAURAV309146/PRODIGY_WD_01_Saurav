@@ -1,0 +1,25 @@
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#faf5ef;color:#2d3748}
+.navbar{position:fixed;top:20px;left:50%;transform:translateX(-50%);width:90%;max-width:1200px;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:rgba(255,248,240,.92);backdrop-filter:blur(15px);border:1px solid rgba(201,125,77,.2);border-radius:20px;transition:.5s;z-index:1000}
+.navbar.scrolled{background:linear-gradient(135deg,#3b2416,#5c3721,#7a4b2f);border:2px solid #f4c97b;box-shadow:0 15px 40px rgba(59,36,22,.35);padding:12px 35px}
+.logo{font-size:1.7rem;font-weight:800;letter-spacing:4px;color:#b76e3c}
+.navbar.scrolled .logo{color:#ffd88a}
+.nav-menu{display:flex;gap:35px;list-style:none}
+.nav-link{text-decoration:none;color:#4b3a2f;font-weight:600;position:relative}
+.nav-link::after{content:'';position:absolute;width:0;height:3px;left:50%;bottom:-8px;transform:translateX(-50%);background:linear-gradient(90deg,#c97d4d,#f4c97b);transition:.3s}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-link:hover,.nav-link.active{color:#c97d4d}
+.navbar.scrolled .nav-link{color:#fff6e8}
+.navbar.scrolled .nav-link.active,.navbar.scrolled .nav-link:hover{color:#ffd88a}
+.section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 30px}
+.hero{background:linear-gradient(135deg,#fff8ee,#f6e4cf,#ecd0b0)}
+.hero h1{font-size:4rem;max-width:900px;margin-bottom:20px;color:#2f241c}
+.hero p,.section p{max-width:700px;line-height:1.8;color:#6b5b50}
+.section:nth-child(even){background:#fff}
+.section:nth-child(odd){background:#faf5ef}
+.section h2{font-size:3rem;margin-bottom:20px;color:#8c4f2d}
+.btn{margin-top:25px;padding:14px 30px;border:none;border-radius:40px;background:linear-gradient(135deg,#c97d4d,#f4c97b);color:white;font-weight:600;cursor:pointer}
+.footer{background:#2f241c;color:#fff6e8;text-align:center;padding:60px 20px}
+.footer h3{color:#ffd88a;margin-bottom:15px;letter-spacing:4px}
+.hamburger{display:none;font-size:2rem;cursor:pointer}
+@media(max-width:768px){.hamburger{display:block}.nav-menu{position:absolute;top:100%;left:0;width:100%;flex-direction:column;background:#fff8ee;max-height:0;overflow:hidden;transition:.3s}.nav-menu.active{max-height:400px}.hero h1{font-size:2.5rem}}
