@@ -78,7 +78,7 @@ No additional dependencies are required.
 
 ## 👨‍💻 Author
 
-**Saurabh Kumar**
+**Saurav Kumar**
 
 Passionate about building modern web applications and continuously improving through hands-on projects.
 
